@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:," />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="Versão de demonstração da Comunidade Gatti (dados fictícios)." />
+    <title>Demonstração · Comunidade Gatti</title>
+    <meta name="theme-color" content="#173b2b" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script defer src="js/demo-data.js"></script>
+    <script defer src="js/app.js"></script>
+  </head>
+  <body>
+
+    <!-- Área autenticada: IDs e pontos de integração usados pelo app.js preservados. -->
+    <div id="area" hidden>
+      <div class="topbar">
+        <div class="topbar-inner">
+          <a class="brand-lockup" href="#inicio" data-page="inicio" aria-label="Comunidade Gatti, início"><span class="brand-mark" aria-hidden="true">✳</span><span>ESTERCO <strong>TURBINADO</strong></span></a>
+          <nav class="topbar-nav" id="topbar-nav" aria-label="Navegação da comunidade">
+            <a href="#inicio" data-page="inicio" aria-current="page">Início</a>
+            <a href="#conteudo" data-page="conteudo">Conteúdo</a>
+            <a href="#produtos" data-page="produtos">Produtos</a>
+            <a href="#guias" data-page="guias">Guias</a>
+            <a href="#ranking" data-page="ranking">Ranking</a>
+          </nav>
+          <a class="topbar-cta" id="topbar-whats" href="#" target="_blank" rel="noopener noreferrer">Falar com Gabriel <span aria-hidden="true">↗</span></a>
+          <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="topbar-nav" aria-expanded="false" title="Abrir menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <main class="page-container">
+        <section class="app-page is-active" id="page-inicio" data-page-view="inicio">
+          <header class="hero">
+            <div class="hero-content">
+              <span class="eyebrow">COMUNIDADE GATTI · CONTEÚDO ESPECIAL</span>
+              <h1>Seu cuidado de hoje prepara a <em>colheita de amanhã.</em></h1>
+              <p>Bem-vindo à Comunidade Gatti. Aqui você encontra o recado do Gabriel e orientações para aproveitar melhor o Esterco Turbinado na sua plantação.</p>
+              <div class="lote-badge"><span class="ponto"></span><span id="lote-texto"></span></div>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+              <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+              <div class="hero-leaf">✳</div>
+              <span class="hero-art-caption">CULTIVAR · NUTRIR · FLORESCER</span>
+            </div>
+          </header>
+          <div class="content-shell home-shell">
+            <section class="points-summary" aria-label="Seu perfil e saldo de pontos">
+              <div><span class="eyebrow">BEM-VINDO À COMUNIDADE</span><h2 id="perfil-nome">Produtor</h2></div>
+              <div class="points-balance"><span>Seus pontos</span><strong id="perfil-pontos">0</strong></div>
+            </section>
+            <section class="community-card">
+              <div class="community-icon" aria-hidden="true">↗</div>
+              <div class="community-copy"><span class="eyebrow eyebrow-light">CRESCIMENTO EM COMUNIDADE</span><h2>Faça parte do nosso grupo.</h2><p>Troque experiências, acompanhe novidades e fique por dentro das orientações da Comunidade Gatti.</p></div>
+              <a class="btn-grupo" id="btn-grupo" href="#" rel="noopener noreferrer" target="_blank">Entrar no grupo <span aria-hidden="true">→</span></a>
+            </section>
+          </div>
+        </section>
+
+        <section class="app-page" id="page-conteudo" data-page-view="conteudo">
+          <div class="content-shell content-page-shell">
+            <section class="video-section" aria-labelledby="video-heading">
+              <div class="section-heading">
+                <div><span class="eyebrow">UM RECADO DO GABRIEL</span><h2 id="video-heading">Dica especial do mês</h2></div>
+                <span class="section-index">01 / CONTEÚDO</span>
+              </div>
+              <div class="video-card"><div class="video-wrap" id="video-wrap"></div></div>
+            </section>
+            <section class="welcome-note">
+              <div class="quote-mark" aria-hidden="true">“</div>
+              <div><p>Oi! Que bom ter você aqui. Esse recado é só para quem comprou o Esterco Turbinado neste mês. <b>Obrigado por confiar no nosso trabalho!</b> Assista ao vídeo acima com uma dica rápida para aproveitar melhor o adubo. Logo abaixo estão os guias completos de manejo para sua planta.</p><div class="assinatura">Gabriel Gatti <span>·</span> Esterco Turbinado</div></div>
+            </section>
+          </div>
+        </section>
+
+        <section class="app-page" id="page-produtos" data-page-view="produtos">
+          <div class="content-shell product-page-shell">
+            <section class="products-section" aria-labelledby="products-heading">
+              <div class="blackfraiday">
+                <div class="blackfraiday-badge" aria-hidden="true">BLACK FRIDAY</div>
+                <h1>Sua plantação merece uma Black Friday à altura.</h1>
+                <p>Garanta o Esterco Turbinado com condições especiais até 10 de dezembro.</p>
+              </div>
+              <div class="section-heading guides-heading">
+                <div><span class="eyebrow">LINHAS DISPONÍVEIS</span><h2 id="products-heading">Encontre o tamanho ideal</h2><p>Escolha a fórmula e o volume para o seu jardim.</p></div>
+                <span class="section-index">02 / PRODUTOS</span>
+              </div>
+              <div class="product-tabs" role="group" aria-label="Linha de produto">
+                <button type="button" class="product-tab is-active" data-product-line="frutifera" aria-pressed="true">Frutífera Premium</button>
+                <button type="button" class="product-tab" data-product-line="comum" aria-pressed="false">Turbinado Comum</button>
+              </div>
+              <div class="product-grid" id="product-grid" aria-live="polite"></div>
+            </section>
+          </div>
+        </section>
+
+        <section class="app-page" id="page-guias" data-page-view="guias">
+          <div class="content-shell guides-page-shell">
+            <section class="pdf-section" aria-labelledby="guides-heading">
+              <div class="section-heading guides-heading">
+                <div><span class="eyebrow">BIBLIOTECA DO PRODUTOR</span><h2 id="guides-heading">Guias de manejo</h2><p>Informação prática para cultivar com mais confiança, do plantio à colheita.</p></div>
+                <span class="section-index">03 / MATERIAIS</span>
+              </div>
+              <div class="pdf-grid" id="pdf-grid"></div>
+            </section>
+          </div>
+        </section>
+
+        <section class="app-page" id="page-ranking" data-page-view="ranking">
+          <div class="content-shell ranking-page-shell">
+            <section class="ranking-page-section" aria-labelledby="community-ranking-heading">
+              <div class="section-heading guides-heading">
+                <div><span class="eyebrow">COMUNIDADE GATTI</span><h2 id="community-ranking-heading">Ranking de pontos</h2><p>Confira a pontuação dos participantes da comunidade.</p></div>
+                <span class="section-index">04 / RANKING</span>
+              </div>
+              <p class="community-ranking-feedback" id="community-ranking-feedback" role="status" aria-live="polite">Carregando ranking...</p>
+              <div class="community-ranking-table-wrap">
+                <table class="community-ranking-table">
+                  <thead><tr><th scope="col">Posição</th><th scope="col">Nome</th><th scope="col">Pontos</th></tr></thead>
+                  <tbody id="community-ranking-body"></tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-main">
+          <div class="brand-lockup brand-lockup-light"><span class="brand-mark" aria-hidden="true">✳</span><span>ESTERCO <strong>TURBINADO</strong></span></div>
+          <div class="footer-contact"><span class="eyebrow eyebrow-light">PRECISA DE AJUDA?</span><h2>Conte com a gente.</h2><p>Fale diretamente com o Gabriel para tirar suas dúvidas.</p><a class="btn-whats" id="btn-whats" href="#" target="_blank" rel="noopener noreferrer">Falar no WhatsApp <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="footer-bottom"><span>Esterco Turbinado · CNPJ 00.000.000/0001-00 (fictício) · Cidade Exemplo, MT</span><span class="footer-credit">Desenvolvido por <a href="https://davitech.com.br" target="_blank" rel="noopener noreferrer">Davitech</a></span></div>
+      </footer>
+    </div>
+  </body>
+</html>

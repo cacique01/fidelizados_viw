@@ -1,0 +1,35 @@
+body { min-height: 100vh; }
+.admin-topbar-inner { display: flex; justify-content: space-between; }
+.admin-label { color: #d7bd8e; font-size: 9px; font-weight: 800; letter-spacing: .16em; }
+.admin-main { width: min(620px, calc(100% - 40px)); margin: 0 auto; padding: 72px 0 90px; }
+.admin-heading { margin-bottom: 30px; }
+.admin-heading .eyebrow { margin-bottom: 9px; }
+.admin-heading h1 { margin: 0; color: var(--forest); font-family: 'Fraunces', serif; font-size: 42px; font-weight: 600; line-height: 1.1; }
+.admin-heading p { margin: 11px 0 0; color: var(--muted); font-size: 14px; }
+.admin-form { display: grid; gap: 18px; padding: 26px; border: 1px solid #e1e4d9; border-radius: 8px; background: var(--paper); box-shadow: var(--shadow); }
+.admin-field label { display: block; margin-bottom: 7px; color: var(--forest); font-size: 12px; font-weight: 800; }
+.admin-field label span { color: var(--muted); font-weight: 500; }
+.admin-field input { width: 100%; min-height: 48px; padding: 0 13px; border: 1px solid #d9dfd6; border-radius: 6px; outline: none; background: #fff; color: var(--ink); font-size: 14px; }
+.admin-field input:focus { border-color: var(--green); box-shadow: 0 0 0 3px rgba(63,117,82,.13); }
+.admin-field input::placeholder { color: #a2aaa0; }
+.admin-submit { display: flex; align-items: center; justify-content: space-between; min-height: 49px; padding: 0 16px; border: 0; border-radius: 6px; background: var(--forest); color: #fff; cursor: pointer; font-size: 13px; font-weight: 800; }
+.admin-submit:hover { background: var(--green); }
+.admin-submit:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+.admin-submit:disabled { cursor: wait; opacity: .65; }
+.admin-submit span { font-size: 20px; }
+.admin-feedback { min-height: 0; margin: -5px 0 0; font-size: 13px; font-weight: 700; }
+.admin-feedback.is-error { color: var(--danger); }
+.admin-feedback.is-success { color: var(--success); }
+@media (max-width: 600px) {
+  .admin-topbar-inner { gap: 12px; }
+  .admin-label { font-size: 8px; letter-spacing: .09em; }
+  .admin-main { padding-top: 48px; }
+  .admin-heading h1 { font-size: 35px; }
+  .admin-form { gap: 15px; padding: 19px; }
+}
+.admin-table-block { margin-top: 38px; }
+.admin-table-block h2 { margin: 0 0 12px; color: var(--forest); font-family: 'Fraunces', serif; font-size: 24px; font-weight: 600; }
+.admin-table-wrap { overflow-x: auto; border: 1px solid #e1e4d9; border-radius: 8px; background: var(--paper); box-shadow: var(--shadow); }
+.admin-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.admin-table th { padding: 11px 14px; background: #edf1e8; color: var(--forest); font-size: 11px; font-weight: 800; letter-spacing: .06em; text-align: left; text-transform: uppercase; }
+.admin-table td { padding: 11px 14px; border-top: 1px solid #e8ebe1; color: var(--ink); white-space: nowrap; }
