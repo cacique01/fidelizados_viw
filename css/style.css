@@ -17,6 +17,15 @@
   --shadow: 0 22px 60px rgba(24, 53, 37, .09);
 }
 
+iframe[src*="netlify"],
+#nl-badge-frame,
+[id*="netlify-badge"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 html { scroll-behavior: smooth; }
@@ -185,9 +194,6 @@ a { color: inherit; }
 .footer-contact p { margin: 6px 0 19px; color: #bdc9be; font-size: 12px; }
 .btn-whats { background: var(--green); color: #fff; }
 .btn-whats:hover { background: #548461; }
-iframe[src^="https://app.netlify.com"] {
-  display: none !important;
-}
 .footer-bottom { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.13); color: #9eafa0; font-size: 12px; }
 .footer-credit { white-space: nowrap; }
 .btn-sair { padding: 7px 0 7px 12px; border: 0; background: transparent; color: #d7c49f; cursor: pointer; font-size: 15px; font-weight: 800; }
