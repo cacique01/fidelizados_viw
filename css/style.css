@@ -17,6 +17,8 @@
   --shadow: 0 22px 60px rgba(24, 53, 37, .09);
 }
 
+/*Tirar balão do netlify*/
+
 iframe[src*="netlify"],
 #nl-badge-frame,
 [id*="netlify-badge"] {
